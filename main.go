@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/david-torres/go-webapp-boilerplate/controllers"
-	"github.com/david-torres/go-webapp-boilerplate/services"
+	"github.com/david-torres/go-webapp-quickstart/controllers"
+	"github.com/david-torres/go-webapp-quickstart/services"
 	"github.com/labstack/echo"
 	mw "github.com/labstack/echo/middleware"
 )

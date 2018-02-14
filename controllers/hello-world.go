@@ -3,7 +3,7 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/david-torres/go-webapp-boilerplate/services"
+	"github.com/david-torres/go-webapp-quickstart/services"
 	"github.com/labstack/echo"
 )
 
@@ -17,7 +17,7 @@ func NewHelloWorldController(hello *services.HelloWorldService) *HelloWorldContr
 	return &HelloWorldController{hello: hello}
 }
 
-// Hello retrieves a blank
+// Hello returns a hello world message
 func (hc HelloWorldController) Hello(c echo.Context) error {
 	return c.JSON(http.StatusOK, hc.hello.SayHello())
 }
