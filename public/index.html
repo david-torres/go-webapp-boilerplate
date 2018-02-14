@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Go Web App Boilerplate</title>
+    </head>
+    <body>
+        <div id="app"></div>
+    </body>
+    <script>
+        fetch('/hello/world').then((response) => {
+            response.text().then((text) => {
+                document.getElementById('app').innerHTML = text;
+            });
+        });
+    </script>
+</html>
