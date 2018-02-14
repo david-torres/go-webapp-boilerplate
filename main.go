@@ -31,6 +31,9 @@ func main() {
 	// app entrypoint
 	e.File("/", "public/index.html")
 
+	// static assets
+	e.Static("/static", "public/static")
+
 	// helloWorld routes
 	helloWorldRoutes := e.Group("/hello")
 	helloWorldRoutes.GET("/world", hc.Hello)
